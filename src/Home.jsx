@@ -5,7 +5,6 @@ function Home(){
     return(
 <div class="home">
     <Link to='/'>
-    
     <main>
         <aside>
             <h2>Descubra nossos </h2>
@@ -27,6 +26,7 @@ function Home(){
             <img id="menina" src="imagens/garota.png" alt="garota no note"></img>
         </article>
     </main>
+    
     </Link>
        
 </div>
