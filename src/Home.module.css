@@ -1,0 +1,68 @@
+main{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside{
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.buttonMain{
+    color: white;
+    background-color: #0810A6;
+    margin-left: 120px;
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.buttonMain:hover{
+    background-color: #0C59AD;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #0810A6;
+}
+
+.curso{
+    margin-left: 120px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.menina{
+    width: 700px;
+}
+
+.redes{
+    margin-left: 30px;
+    height: 40px;
+}
+
+.redes:hover{
+    cursor: pointer;
+}
+
+.listaRedes{
+    font-size: 19px;
+    display: inline-block;
+    margin: 20px;
+
+}

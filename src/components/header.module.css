@@ -17,7 +17,7 @@
     list-style-type: none;
     font-size: 22px;
     display: inline-block;
-    margin: 20px;
+    margin: 22px;
 }
 
 .link:hover{
@@ -44,8 +44,12 @@
     border: none;
     font-size: 22px;
     cursor: pointer;
+    margin-right: 30px;
+
 }
 
 button:hover{
     background-color: #0C59AD;
 }
+
+

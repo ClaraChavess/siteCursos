@@ -1,34 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Home.module.css';
+import styles from './Home.module.css';
 
 function Home(){
     return(
 <div class="home">
-    <Link to='/'>
+    <Link to='/'></Link>
     <main>
         <aside>
             <h2>Descubra nossos </h2>
-            <h2 id="curso">CURSOS</h2>
-           <a href="#cursinhos"><button>Clique aqui</button></a>
+            <h2 className={styles.curso}>CURSOS</h2>
+            <button className={styles.buttonMain}>Clique aqui</button>
 
             <ul>
-                <li >
-                    <a href="http://www.instagram.com/dsistemas_cesarcampelo/" target="_blank">
-                        <img class="redes"src="imagens/insta.png" alt="Instagram"></img>
-                    </a>
+                <li className={styles.listaRedes}>
+                    
+                        <img className={styles.redes} src="imagens/insta.png" alt="Instagram"></img>
+                    
                 </li>
-                <li ><img class="redes" src="imagens/tiktok.png" alt="TikTok"></img></li>
-                <li ><img class="redes" src="imagens/face.png" alt="Facebook"></img></li>
+                <li className={styles.listaRedes}><img className={styles.redes} src="imagens/tiktok.png" alt="TikTok"></img></li>
+                <li className={styles.listaRedes}><img className={styles.redes} src="imagens/face.png" alt="Facebook"></img></li>
             </ul>
         </aside>
-
         <article> 
-            <img id="menina" src="imagens/garota.png" alt="garota no note"></img>
+            <img className={styles.menina} src="imagens/garota.png" alt="garota no note"></img>
         </article>
     </main>
     
-    </Link>
-       
+    
 </div>
     
 )
