@@ -1,12 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/header';
+import CriarConta from './components/CriarConta';
+import SobreNos from './components/SobreNos'; 
+import Contato from './components/Contato';
+import Home from './Home';
+import { BrowserRouter, Route, Routes, Router,Link } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
-  );
-}
-
+    <BrowserRouter>
+    <div className='App'>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+          <Route path='/contato' element={<Contato/>}></Route>
+          <Route path='/sobre-nos' element={<SobreNos/>}></Route>
+          <Route path='/criar-conta' element={<CriarConta/>}></Route>
+        </Routes>
+   </div>
+   </BrowserRouter>
+  )
+};
 export default App;

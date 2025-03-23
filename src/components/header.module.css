@@ -1,0 +1,16 @@
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*ESPAÇO ENTRE ELES*/
+    align-items: center;    
+    background-color: aqua;
+}
+
+li{
+    color: rgb(8, 16, 166);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+
+}
