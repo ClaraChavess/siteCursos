@@ -1,16 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .navegacao{
     display: flex;
     flex-direction: row;
     justify-content: space-between; /*ESPAÇO ENTRE ELES*/
     align-items: center;    
-    background-color: aqua;
+
+
 }
 
-li{
+.link{
     color: rgb(8, 16, 166);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-decoration: none;
+    list-style-type: none;
+    font-size: 22px;
+    display: inline-block;
+    margin: 20px;
+}
 
+.link:hover{
+    color: #0C59AD;
+    transition: 0.3s all;
+}
+
+.logo{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #0810A6;
+}
+
+.header{
+    margin-left: 30px;
+    
+}
+
+.botao_CriarConta{
+    background-color: #0810A6;
+    color: white;
+    padding: 20px;
+    border-radius: 24px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0C59AD;
 }
