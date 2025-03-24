@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import './Home.module.css';
 import styles from './Home.module.css';
 
+import IconeMenina from './imagens/garota.png';
+import Instagram from './imagens/insta.png';
+import TikTok from './imagens/tiktok.png';
+import Facebook from './imagens/face.png';
+
+
 function Home(){
     return(
 <div class="home">
@@ -16,15 +22,15 @@ function Home(){
             <ul>
                 <li className={styles.listaRedes}>
                     
-                        <img className={styles.redes} src="imagens/insta.png" alt="Instagram"></img>
+                        <img className={styles.redes} src={Instagram} alt="Instagram"></img>
                     
                 </li>
-                <li className={styles.listaRedes}><img className={styles.redes} src="imagens/tiktok.png" alt="TikTok"></img></li>
-                <li className={styles.listaRedes}><img className={styles.redes} src="imagens/face.png" alt="Facebook"></img></li>
+                <li className={styles.listaRedes}><img className={styles.redes} src={TikTok}alt="TikTok"></img></li>
+                <li className={styles.listaRedes}><img className={styles.redes} src={Facebook} alt="Facebook"></img></li>
             </ul>
         </aside>
         <article> 
-            <img className={styles.menina} src="imagens/garota.png" alt="garota no note"></img>
+            <img className={styles.menina} src={IconeMenina} alt="garota com um notebook"></img>
         </article>
     </main>
     
