@@ -6,6 +6,10 @@ import Contato from './components/Contato';
 import Home from './Home';
 import MeusCursos from './components/MeusCursos';
 import Banco from './components/banco';
+import Design from './components/design';
+import Poo from './components/poo';
+import Rede from './components/rede';
+import Robot from './components/robot';
 import { BrowserRouter, Route, Routes, Router,Link } from 'react-router-dom';
 
 
@@ -21,10 +25,14 @@ function App() {
           <Route path='/sobre-nos' element={<SobreNos/>}></Route>
           <Route path='/criar-conta' element={<CriarConta/>}></Route>
           <Route path='/meus-cursos' element={<MeusCursos/>}></Route>
-          <Route path="/Banco" element={<banco />}/>
+          <Route path="/banco" element={<Banco />}></Route>
+          <Route path="/design" element={<Design />}></Route>
+          <Route path="/poo" element={<Poo />}></Route>
+          <Route path="/rede" element={<Rede />}></Route>
+          <Route path="/robot" element={<Robot />}></Route>
         </Routes>
-   </div>
-   </BrowserRouter>
+    </div>
+    </BrowserRouter>
   )
 };
 export default App;
