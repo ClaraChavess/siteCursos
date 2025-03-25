@@ -1,0 +1,35 @@
+.cursos{
+    background-color: #0810A6;
+    width:19%;
+    height: 60vh;
+    border-radius: 10px;
+    margin-inline: 50px;
+    box-shadow: 5px 0px 5px 0px gray;
+}
+
+.imagemCursos{
+    height: 180px;
+    width: 270px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.tituloCursos{
+    color: aliceblue;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.descricaoCursos{
+    color: aliceblue;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h5{
+    color: aliceblue;
+    margin-left: 180px;
+}
