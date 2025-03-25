@@ -1,0 +1,65 @@
+.cursos{
+    background-color: #0810A6;
+    width:19%;
+    height: 60vh;
+    border-radius: 10px;
+    margin-inline: 50px;
+    box-shadow: 5px 0px 5px 0px gray;
+    text-align: center;
+}
+
+.imagemCursos{
+    height: 180px;
+    width: 300px;
+    margin-top: 18px;
+    border-radius: 5px;
+}
+
+.tituloCursos{
+    color: aliceblue;
+    margin: 0;
+    margin-left: 28px;
+    font-size: 24px;
+    text-align: start;
+}
+
+.descricaoCursos{
+    color: aliceblue;
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+h5{
+    color: #0810A6;
+    margin-left: 180px;
+    font-size: 16px;
+}
+
+a{text-decoration: none;}
+
+.secaoCursos{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.botaoCursos{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 24px;
+    height: 5vh;
+    margin-top: 2vh;
+    width: 16vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color:#0810A6;
+    text-decoration: none;
+}
+
+.botaoCursos:hover{
+    cursor: pointer;
+    color: aliceblue;
+}
