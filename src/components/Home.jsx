@@ -8,6 +8,7 @@ import IconeMenina from './imagens/garota.png';
 import Instagram from './imagens/insta.png';
 import TikTok from './imagens/tiktok.png';
 import Facebook from './imagens/face.png';
+import Footer from "./footer";
 
 
 function Home(){
