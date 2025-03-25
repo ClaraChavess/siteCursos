@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from './cursos.module.css';
 
+import Design from './imagens/design.png';
 
 
 function Cursos(){

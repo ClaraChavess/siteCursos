@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Home.module.css';
 import styles from './Home.module.css';
-import Cursos from "./components/cursos";
+import Cursos from "./cursos";
 
 import IconeMenina from './imagens/garota.png';
 import Instagram from './imagens/insta.png';
