@@ -1,0 +1,35 @@
+
+.tituloSobre{
+    color: #0810A6;
+    font-size: 42px;
+    text-align: center;
+}
+
+.secaoSobre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagemTecnologia{
+    width: 700px;
+}
+
+.paragrafoSobre{
+    color: black;
+    text-align: justify;
+}
+
+.imagemSobre{
+    width: 40%;
+    margin-left: 2vw;
+}
+
+.textoSobre{
+    width: 40%;
+    margin-top: 12vh;
+}
+
+.textoSobre{
+    text-align: justify;
+    font-size: 20px;
+}
