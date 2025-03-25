@@ -3,7 +3,7 @@ import Header from './components/header';
 import CriarConta from './components/CriarConta';
 import SobreNos from './components/SobreNos'; 
 import Contato from './components/Contato';
-import Home from './Home';
+import Home from './components/Home';
 import MeusCursos from './components/MeusCursos';
 import { BrowserRouter, Route, Routes, Router,Link } from 'react-router-dom';
 

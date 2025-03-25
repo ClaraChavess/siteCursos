@@ -18,7 +18,7 @@ function Home(){
         <aside>
             <h2>Descubra nossos </h2>
             <h2 className={styles.curso}>CURSOS</h2>
-            <button className={styles.buttonMain}>Clique aqui</button>
+            <a href="#cursinhos"><button className={styles.buttonMain}>Clique aqui</button></a>
 
             <ul>
                 <li className={styles.listaRedes}>
