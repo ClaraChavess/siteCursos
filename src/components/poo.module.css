@@ -44,8 +44,8 @@ li{
     text-align: center;
 }
 
-#imagem_poo {
-    margin-left: 200px;
+.imagem_poo {
+    margin-left: 35%;
     margin-top:100px;   
 }
 
@@ -56,7 +56,7 @@ h2{
 
 .conteudo{
     margin: 50px;
-    width: 50%;
+    width: 90%;
     text-align: center;
 }
 
@@ -69,7 +69,30 @@ p{
     color: black;
     font-weight: 500;
 }
-
+.para{
+    color: black;
+    font-weight: 500;
+}
+.para2{
+    color: black;
+    font-weight: 500;
+}
+.para3{
+    color: black;
+    font-weight: 500;
+}
+.para4{
+    color: black;
+    font-weight: 500;
+}
+.para5{
+    color: black;
+    font-weight: 500;
+}
+.para6{
+    color: black;
+    font-weight: 500;
+}
 hr{
     height: 2px;
     background-color: #0810A6;
