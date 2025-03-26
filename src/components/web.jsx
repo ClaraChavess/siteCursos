@@ -1,7 +1,6 @@
 import React from "react";
 import './web.module.css';
 import styles from './web.module.css';
-import FormInscricao from "./formInscricao";
 
 import Web from './imagens/programaweb.png';
 import HTML_CSS from './imagens/html_css1.png';
@@ -58,7 +57,6 @@ function web() {
                 </div>
             </section>
             
-            <FormInscricao></FormInscricao>
         </div>
     );
 }

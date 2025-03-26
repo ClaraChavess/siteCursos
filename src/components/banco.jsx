@@ -27,7 +27,7 @@ function banco(){
 
             <section className={styles.sectionBanco}>
                 <aside id="ixquerda">
-                   <img src={BD2} alt="Fundamentos de Banco de Dados" className={styles.imagensBanco}/>
+                   <img src={BD2} alt="Fundamentos de Banco de Dados" className={styles.imagensBanco2}/>
                 </aside>
                 <div className={styles.conteudoBanco2}>
                    <h2 className={styles.tituloBanco} >FUNDAMENTOS DE BANCO DE DADOS</h2>

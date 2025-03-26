@@ -1,7 +1,7 @@
 import React from "react";
 import './design.module.css';
 import styles from './design.module.css';
-import FormInscricao from "./formInscricao";
+
 
 import detalhe1 from './imagens/detalhe1.png';
 import designer from './imagens/Designer(2).png';
@@ -64,7 +64,7 @@ function design(){
                         </div>
                     </div>
 
-                 <FormInscricao></FormInscricao>
+
         </div>
     )
 }

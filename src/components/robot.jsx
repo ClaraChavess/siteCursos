@@ -1,6 +1,5 @@
 import React from "react";
 import './robot.module.css';
-import FormInscricao from "./formInscricao";
 import styles from './robot.module.css';
 
 // Imagens:
@@ -54,7 +53,7 @@ function robot() {
                     <img src={Robozin} alt="Robô" id={styles.imagem_pequena} />
                 </div>
             </section>
-            <FormInscricao></FormInscricao>
+
         </div>
     );
 }

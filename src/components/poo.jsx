@@ -1,7 +1,7 @@
 import React from "react";
 import './poo.module.css';
 import styles from './poo.module.css';
-import FormInscricao from "./formInscricao";
+
 
 
 function poo() {
@@ -57,7 +57,7 @@ function poo() {
                 </section>
                 
             </main>
-            <FormInscricao></FormInscricao>
+
         </div>
     );
 }

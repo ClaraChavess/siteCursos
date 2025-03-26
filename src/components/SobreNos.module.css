@@ -11,7 +11,8 @@
 }
 
 .imagemTecnologia{
-    width: 700px;
+    width: 650px;
+    height: 100%;
 }
 
 .paragrafoSobre{
@@ -22,6 +23,7 @@
 .imagemSobre{
     width: 40%;
     margin-left: 2vw;
+ 
 }
 
 .textoSobre{

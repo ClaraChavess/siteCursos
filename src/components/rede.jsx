@@ -1,7 +1,7 @@
 import React from "react";
 import './rede.module.css';
 import styles from './rede.module.css';
-import FormInscricao from "./formInscricao";
+
 
 //Imagens:
 import Redes from './imagens/redes_1.png';
@@ -48,7 +48,7 @@ function rede() {
                     <img src={Redes3} alt="Manutenção de Redes" className={styles.manuRedes} />
                 </aside>
             </section>
-            <FormInscricao></FormInscricao>
+
         </div>
     );
 }
