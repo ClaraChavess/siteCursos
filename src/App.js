@@ -32,6 +32,7 @@ function App() {
           <Route path="/poo" element={<Poo />}></Route>
           <Route path="/rede" element={<Rede />}></Route>
           <Route path="/robot" element={<Robot />}></Route>
+          </Routes>
         
         <Footer></Footer>
    </div>
