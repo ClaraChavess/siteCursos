@@ -1,14 +1,15 @@
 import React from "react";
 import './design.module.css';
+import styles from './design.module.css';
 import FormInscricao from "./formInscricao";
 
 function design(){
     return(
         <><div>
-            <div id="detalhe1">
-                <img src="./imagens/detalhe1.png" alt="Detalhe 1" id="foto_detalhe1" />
+            <div className={styles.detalhe1}>
+                <img src="./imagens/detalhe1.png" alt="Detalhe 1" className={styles.fotoDetalhe1} />
             </div>
-        </div><main id="conteudo_principal">
+        </div><main className={styles.conteudoPrincipal}>
                 <section id="design">
                     <div id="titulos">
                         <h1 id="titulo_design">DESIGN</h1>
