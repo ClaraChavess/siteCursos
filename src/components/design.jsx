@@ -4,7 +4,7 @@ import styles from './design.module.css';
 import FormInscricao from "./formInscricao";
 
 import detalhe1 from './imagens/detalhe1.png';
-import designer from './imagens/Designer (2).png';
+import designer from './imagens/Designer(2).png';
 import figma from './imagens/FIGMA.png';
 import detalhe2 from './imagens/detalhe2.png';
 import detalhe3 from './imagens/detalhe3.png';
@@ -32,12 +32,25 @@ function design(){
                 <div className={styles.titulos}>
                         <h1 className={styles.titulo_design}>FIGMA</h1>
                         <p className={styles.conteudo_sobre_figma}>Nessa disciplina, iremos trabalha-lá com a plataforma Figma. Será aprendido a fazer telas para smartphones, desktops e derivados. Telas responsivas que variam de dispositivos e suas respectivas proporções. Já pensou o quão íncrivel seria ficar no conforto de sua residência fazendo telas para diferentes empresas e perfis?</p>
+
+                        <div className={styles.botao}>
+                            <a href="https://www.figma.com/design/8L4GM19HslpRsJbMuZyyGW/Untitled?node-id=6-23&node-type=frame&t=ay0dEaGrJEu93ctG-0"><input type="button" value="FIGMA" className={styles.botao_para_figma}/>
+                            </a>
+                        </div>
                         <div className={styles.detalhe3}>
-                        <img src={detalhe3} className={styles.foto_detalhe3}>
-                        </img>
-                    
+                            <img src={detalhe3} className={styles.foto_detalhe3}></img>           
+                        </div>
                     </div>
+                        
+                        <div className={styles.titulo}> <div className={styles.detalhe2}>
+                            <img src={detalhe2} className={styles.foto_detalhe2}></img>
+                        </div>
+                            <div className={styles.imagem_referencia2}>
+                                <img src={figma} id="figmer"></img>
+                        </div>
+                       
                     </div>
+            
             </section>
 
             <section className={styles.secaoDesign}>
