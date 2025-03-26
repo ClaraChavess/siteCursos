@@ -1,5 +1,6 @@
 import React from "react";
-import './robot.css';
+import './robot.module.css';
+import FormInscricao from "./formInscricao";
 
 
 function robot() {
@@ -46,28 +47,7 @@ function robot() {
                     <img src="imagens/robozin.png" alt="Robô" id="imagem_pequena" />
                 </div>
             </section>
-            <section className="secao_form">
-                <div className="form_inscricao">
-                    <h2 className="titulo_form">Formulário de inscrição</h2>
-                    <form>
-                        <p className="paragrafo_form"><b>Email</b></p>
-                        <input type="email" name="email" id="email" placeholder="seuemail@gmail.com" />
-                        <br />
-                        <span id="erroemail"></span>
-                        <p className="paragrafo_form"><b>Senha</b></p>
-                        <input type="password" name="senha" id="senha" placeholder="Sua senha" />
-                        <br />
-                        <span id="errosenha"></span>
-                        <p className="paragrafo_form"><b>Modalidade</b></p>
-                        <select id="modalidade">
-                            <option value="Presencial">Presencial</option>
-                            <option value="EAD">Ensino a distancia</option>
-                        </select>
-                        <br />
-                        <button type="submit" className="botao_form">ENVIAR</button>
-                    </form>
-                </div>
-            </section>
+            <FormInscricao></FormInscricao>
         </div>
     );
 }

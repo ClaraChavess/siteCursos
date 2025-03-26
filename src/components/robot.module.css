@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
@@ -44,11 +46,6 @@ li{
     text-align: center;
 }
 
-#imagem_poo {
-    margin-left: 200px;
-    margin-top:100px;   
-}
-
 h2{
  margin-top: -25px;
  font-size: 30px;
@@ -71,6 +68,7 @@ p{
 }
 
 hr{
+    
     height: 2px;
     background-color: #0810A6;
 }
@@ -94,18 +92,11 @@ section{
     text-align: center;
 }
 
-
 .secao_form{
     display: flex;
     justify-content: center;
 }
-.form_inscricao{
-    background-color: #0810A6;
-    height: 500px;
-    width: 35%;
-    border-radius: 15px;
-    text-align: center;
-}
+
 .form_inscricao{
     background-color: #0810A6;
     height: 500px;
@@ -120,68 +111,81 @@ section{
     text-align: center;
     padding-top: 8px;
 }
-.secao_form{
-    padding-top: 60px;
+
+
+footer{
+    margin-top: 160px;
+    width: 100%;
+    height: 200px;
+    background-color: #0810A6;
+
+}
+
+.titulo_footer{
+    color: #ffff;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+.linha_footer{
+    width: 50%;
+    background-color: aliceblue;
+    height: 0.2px;
+}
+
+.texto_footer{
+    color: aliceblue;
+    text-align: center;
+    font-weight: 300;
+}
+
+.redes-sociais{
+text-align: center;
+}
+
+.projetos_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90vh;
+}
+.div_imagem_grande {
+    height: 100%;
+}
+#imagem_grande {
+    height: 100%;
+}
+.div_imagem_desc {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.descricao {
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-
-.form_inscricao{
-    background-color: #0810A6;
-    height: 500px;
-    width: 35%;
-  border-radius: 15px;
-}
-
-.titulo_form{
-    color: #ffff;
-    margin: 0;
-    font-size: 25px;
+.descricao > h2 {
+    display: block;
     text-align: center;
-    padding-top: 30px;
+    margin: 0;
+    font-size: 40px;
+}
+.descricao > hr {
+    width: 100%;
+    margin-bottom: 50px;
+}
+#imagem_pequena {
+    width: 100%;
+    height: auto;
 }
 
-.paragrafo_form{
-    color: white;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 20px;
-    margin-top: 30px;
-}
 
-#email{
-    width: 300px;
-    height: 25px;
-    border-radius: 5px;
-    font-family: "Lexend Deca", sans-serif;
-}
 
-#senha{
-    width: 300px;
-    height: 25px;
-    border-radius: 5px;
-    font-family: "Lexend Deca", sans-serif;
-}
-
-#modalidade{
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    font-family: "Lexend Deca", sans-serif;
-}
-
-.botao_form{
-    width: 120px;
-    height: 35px;
-    margin-top: 25px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: "Lexend Deca", sans-serif;
-    transition: 0.7s;   
-}
-
-.botao_form:hover{
-    background-color: #000677;
-    color: white;
-}

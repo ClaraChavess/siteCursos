@@ -8,16 +8,16 @@ import IconeMenina from './imagens/garota.png';
 import Instagram from './imagens/insta.png';
 import TikTok from './imagens/tiktok.png';
 import Facebook from './imagens/face.png';
-import Footer from "./footer";
+
 
 
 function Home(){
     return(
 <div class="home">
     <Link to='/'></Link>
-    <main>
-        <aside>
-            <h2>Descubra nossos </h2>
+    <main className={styles.mainHome}>
+        <aside className={styles.asideHome}>
+            <h2 className={styles.tituloHome}>Descubra nossos </h2>
             <h2 className={styles.curso}>CURSOS</h2>
             <a href="#cursinhos"><button className={styles.buttonMain}>Clique aqui</button></a>
 

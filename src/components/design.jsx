@@ -1,5 +1,6 @@
 import React from "react";
-import './design.css';
+import './design.module.css';
+import FormInscricao from "./formInscricao";
 
 function design(){
     return(
@@ -47,29 +48,12 @@ function design(){
                     </div>
                     <div id="painel_video">
                         <div id="video">
-                            <iframe width="95%" height="95%" src="https://www.youtube.com/embed/uan_tk6j_rg?si=yubzokcI7LL-hneL" title="YouTube video" style="border : none;" allowFullScreen></iframe>
+                            <iframe width="95%" height="95%" src="https://www.youtube.com/embed/uan_tk6j_rg?si=yubzokcI7LL-hneL" title="YouTube video" allowFullScreen></iframe>
                         </div>
                     </div>
                 </section>
 
-                <section className="secao_form">
-                    <div className="form_inscricao">
-                        <h2 className="titulo_form">Formulario de inscricao</h2>
-                        <form>
-                            <p className="paragrafo_form"><b>Email</b></p>
-                            <input type="email" name="email" placeholder="seuemail@gmail.com" /><br />
-                            <p className="paragrafo_form"><b>Senha</b></p>
-                            <input type="password" name="senha" placeholder="Sua senha" /><br />
-                            <p className="paragrafo_form"><b>Modalidade</b></p>
-                            <select id="madalidade">
-                                <option value="Presencial">Presencial</option>
-                                <option value="EAD">Ensino a distancia</option>
-                            </select>
-                            <br />
-                            <button type="submit" className="botao_form">ENVIAR</button>
-                        </form>
-                    </div>
-                </section>
+               <FormInscricao></FormInscricao>
             </main></>
     )
 }

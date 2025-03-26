@@ -1,5 +1,9 @@
 import React from "react";
-import './poo.css';
+import './poo.module.css';
+import styles from './poo.module.css';
+import FormInscricao from "./formInscricao";
+
+
 function poo() {
     return (
         <div>
@@ -51,25 +55,9 @@ function poo() {
                         <hr />
                     </div>
                 </section>
-                <section className="secao_form">
-                    <div className="form_inscricao">
-                        <h2 className="titulo_form">Formulário de inscrição</h2>
-                        <form>
-                            <p className="paragrafo_form"><b>Email</b></p>
-                            <input type="email" name="email" placeholder="seuemail@gmail.com" /><br />
-                            <p className="paragrafo_form"><b>Senha</b></p>
-                            <input type="password" name="senha" placeholder="Sua senha" /><br />
-                            <p className="paragrafo_form"><b>Modalidade</b></p>
-                            <select id="modalidade">
-                                <option value="Presencial">Presencial</option>
-                                <option value="EAD">Ensino a distancia</option>
-                            </select>
-                            <br />
-                            <button type="submit" className="botao_form">ENVIAR</button>
-                        </form>
-                    </div>
-                </section>
+                
             </main>
+            <FormInscricao></FormInscricao>
         </div>
     );
 }

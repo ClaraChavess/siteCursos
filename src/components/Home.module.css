@@ -1,11 +1,11 @@
-main{
+.mainHome{
     margin-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-aside{
+.asideHome{
     margin-left: 150px;
     margin-top: 80px;
 }
@@ -31,7 +31,7 @@ aside{
     cursor: pointer;
 }
 
-h2{
+.tituloHome{
     font-size: 56px;
     line-height: 8px;
     font-family: "Poppins", sans-serif;
