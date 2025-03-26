@@ -59,6 +59,18 @@ main{
     justify-content: space-between;
 }
 
+.para1{
+    color:black;
+    font-weight: 500;
+}
+.para2{
+    color:black;
+    font-weight: 500;
+}
+.para3{
+    color:black;
+    font-weight: 500;
+}
 p{
     color: black;
     font-weight: 500;
