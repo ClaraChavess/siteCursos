@@ -17,112 +17,85 @@
     
 }
 
-.conteudoPrincipal{
-    width: 100%;
-    height: 200px;
+.secaoDesign{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulos{width: 50%;}
+
+.conteudo{
+    margin-left: 260px;
+    width: 40%;
+}
+
+.titulo_design{
+    font-family: "Luckiest Guy", cursive;
+    font-size: 80px;
     text-align: center;
 }
 
-#titulos{
-    width: 50%;
-    height: 200px;
-
-}
-
-#titulos{
-    margin-left: 150px;
-}
-
-#conteudo{
-    margin-left: 260px;
-}
-
-#titulo_design{
-    font-family: "Luckiest Guy", cursive;
-    font-size: 80px;
-}
-
-#subtitulo{
+.subtitulo{
     font-family: "Luckiest Guy", cursive;
     font-size: 70px;
     margin-left: 60px;
     margin-top: -40px;
 }
 
-#linha_design{
+.linha_design{
     background-color: #C6C7C9;
     height: 5px;
-    width: 95%;
+    width: 100%;
     margin-left: 50px ;
     margin-top: -50px;
     border: none;
 }
 
-#conteudo{
-    width: 40%;
-}
 
-#conteudo_sobre_design{
+.conteudo_sobre_design{
     font-family: "Lexend Deca", sans-serif;
     font-size: 20px;
     color: black;
-    margin-top: 40px;
     font-weight: 500;
-    
-    text-align: justify;
+   text-align: center;
+   margin-left: 5%;
 }
 
-#imagem_referencia{
-    width: 25%;
-    position: relative;
-    left: 1000px;
-    bottom: 470px;
+.imagem_referencia{
+    width: 40%;
+
 }
 
-
-#designer{
+.designer{
     width: 540px;
     height: 560px;
 }
 
-#titulos2{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-}
+
 
 #figminha{
     width: 100%;
 }
 
-#figma{
-    font-family: "Luckiest Guy", cursive;
-    font-size: 80px;
-    margin-left: -450px;
-}
 
-#conteudo1{
-    width: 40%;
-    margin-left: 260px;
-}
-
-#conteudo_sobre_figma{
+.conteudo_sobre_figma{
     font-family: "Lexend Deca", sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
-    margin-top: 40px;
     font-weight: 500;
-    text-align: justify;
+    text-align: center;
+    width: 50%;
+    margin-left: 28%;
+    margin-top: -26px;
+
 }
 
-#botao{
+.botao{
     display: flex;
-    justify-content: flex-start;
-    margin-left: 29.5%;
-    margin-top: 30px;
+    justify-content: center;
 }
 
-#botao_para_figma{
+.botao_para_figma{
     height: 50px;
     width: 200px;
     border-radius: 20px;
@@ -135,14 +108,15 @@
     border: solid #0810A6 1px;
 }
 
-#imagem_referencia2{
-    width: 25%;
-    position: relative;
-    left: 1070px;
-    bottom: 300px;
+.imagem_referencia2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+ 
 }
 
-#figmer{
+.figmer{
     width: 300px;
     height: 300px;
     color: white;
@@ -151,63 +125,44 @@
     border-radius: 5px;
 }
 
-#detalhe2{
+.detalhe2{
     height: 0px;
     width: 0px;
     position: relative;
-    left: 1500px;
-    bottom: 800px;
+left: -80px;
     z-index: -1;
     
 }
 
-#foto_detalhe2{
+.foto_detalhe2{
     width: 400px;
     height: 500px;
     
 }
 
-#detalhe2{
-    height: 0px;
-    width: 0px;
-    position: relative;
-    left: 1183px;
-    bottom: 800px;
-    z-index: -1;
-    
-}
 
-#foto_detalhe2{
-    width: 400px;
-    height: 500px;
-    
-}
-
-#secao_figma{
-    margin-top: 60px;
-    height: 600px;
-}
-
-#titulos3{
-    height: 150px;
+.titulos2{
     display: flex;
     justify-content: center;
-    margin-left: 630px;
+    width: 100%;
+
 }
 
-#painel_video{
+.painel_video{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+
+
 }
 
-#video{
+.video{
     background-color: #000677;
-    width: 95%;
+    width: 80%;
     height: 650px;
     padding-top: 2%;
+
 }
-#detalhe3{
+.detalhe3{
     height: 0px;
     width: 0px;
     position: relative;
@@ -216,7 +171,7 @@
     
 }
 
-#foto_detalhe3{
+.foto_detalhe3{
     width: 300px;
     height: 500px;
     
