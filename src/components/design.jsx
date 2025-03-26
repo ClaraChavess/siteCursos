@@ -4,7 +4,7 @@ import styles from './design.module.css';
 import FormInscricao from "./formInscricao";
 
 import detalhe1 from './imagens/detalhe1.png';
-import designer from './imagens/Designer (2).png';
+import designer from './imagens/Designer(2).png';
 import figma from './imagens/FIGMA.png';
 import detalhe2 from './imagens/detalhe2.png';
 import detalhe3 from './imagens/detalhe3.png';
