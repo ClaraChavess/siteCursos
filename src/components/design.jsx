@@ -61,7 +61,7 @@ function design(){
                         </div>
                     </div>
 
-                 
+                 <FormInscricao></FormInscricao>
         </div>
     )
 }
