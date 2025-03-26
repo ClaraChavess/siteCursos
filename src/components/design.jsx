@@ -35,17 +35,7 @@ function design(){
                         <div className={styles.detalhe3}>
                         <img src={detalhe3} className={styles.foto_detalhe3}>
                         </img>
-                    </div>
-                            <div className={styles.botao}>
-                                <a href="https://www.figma.com/design/8L4GM19HslpRsJbMuZyyGW/Untitled?node-id=6-23&node-type=frame&t=ay0dEaGrJEu93ctG-0">
-                                    <button className={styles.botao_para_figma}>FIGMA</button>
-                                </a>
-                            </div>
-                </div>
-                <div className={styles.imagem_referencia2}>
-                        <img src={figma} alt="Figma" className={styles.figmer} />
-                        <div className={styles.detalhe2}>
-                        <img src={detalhe2} className={styles.foto_detalhe2}></img>
+                    
                     </div>
                     </div>
             </section>

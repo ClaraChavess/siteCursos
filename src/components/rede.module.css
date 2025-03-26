@@ -124,11 +124,11 @@ text-align: center;
 }
 
 
-#imagem_redes{
+.imagem_redes{
     display: flex;
     justify-content:center;
 }
-#imagem_redes> img{
+.conceitoRedes{
     height:300px;
 }
 
