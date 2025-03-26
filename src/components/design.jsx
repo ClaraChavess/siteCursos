@@ -31,7 +31,7 @@ function design(){
                         <h1 id="figma">FIGMA</h1>
                     </div>
                     <div id="conteudo1">
-                        <p id="conteudo_sobre_figma">Nessa disciplina, iremos trabalha-lá com a plataforma Figma. Será aprendido a fazer telas para smartphones, desktops e derivados. Telas responsivas que variam de dispositivos e suas respectivas proporções. Já pensou o quão íncrivel seria ficar no conforto de sua residência fazendo telas para diferentes empresas e perfis?</p>
+                        <p id="conteudo_sobre_figma">Nessa disciplina, iremos trabalha-la com a plataforma Figma. Será aprendido a fazer telas para smartphones, desktops e derivados. Telas responsivas que variam de dispositivos e suas respectivas proporções. Já pensou o quão íncrivel seria ficar no conforto de sua residência fazendo telas para diferentes empresas e perfis?</p>
                     </div>
                     <div id="botao">
                         <a href="https://www.figma.com/design/8L4GM19HslpRsJbMuZyyGW/Untitled?node-id=6-23&node-type=frame&t=ay0dEaGrJEu93ctG-0">
