@@ -6,7 +6,7 @@ import styles from './banco.module.css';
 import bd from './imagens/banco_1.png';
 import BD2 from './imagens/banco_2.png';
 import BD3 from './imagens/banco_3.png';
-import FormInscricao from "./formInscricao";
+
 
 function banco(){
     return(
@@ -53,7 +53,7 @@ function banco(){
                   <img src={BD3} alt="MySQL"  className={styles.imagensBanco} />
                </aside>
             </section>
-   <FormInscricao></FormInscricao>
+
             
         </div>
 

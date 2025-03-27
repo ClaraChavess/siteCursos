@@ -7,10 +7,12 @@
 
 .formInscricao{
     background-color: #0810A6;
-    height: 500px;
+    height: 600px;
     width: 35%;
     border-radius: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center ;
 }
 
 .tituloForm{
@@ -26,6 +28,8 @@
     font-family: "Lexend Deca", sans-serif;
     font-size: 20px;
     margin-top: 30px;
+    text-align: start;
+   
 }
 
 .inputsForm{
@@ -52,3 +56,17 @@
     color: white;
 }
 
+.tituloConta{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.divForm{
+   width: fit-content;
+}
+
+.Formtitulo{
+    height: fit-content;
+    
+}

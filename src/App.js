@@ -11,35 +11,34 @@ import Poo from './components/poo';
 import Rede from './components/rede';
 import Robot from './components/robot';
 import Web from './components/web';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
-
-
+import { AuthProvider } from "./components/AuthContext"; // Caminho correto
 
 function App() {
   return (
-    <BrowserRouter>
-    <div className='App'>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-          <Route path='/contato' element={<Contato/>}></Route>
-          <Route path='/sobre-nos' element={<SobreNos/>}></Route>
-          <Route path='/criar-conta' element={<CriarConta/>}></Route>
-          <Route path='/meus-cursos' element={<MeusCursos/>}></Route>
-
-          <Route path="/banco-de-dados" element={<Banco />}></Route>
-          <Route path="/design" element={<Design />}></Route>
-          <Route path="/poo" element={<Poo />}></Route>
-          <Route path="/redes" element={<Rede />}></Route>
-          <Route path="/robotica" element={<Robot />}></Route>
-          <Route path="/programacao-web" element={<Web />}></Route>
+    <AuthProvider> {/* Contexto deve envolver tudo */}
+      <BrowserRouter>
+        <div className='App'>
+          <Header/>
+          <Routes>
+            <Route path='/' element={<Home/>}></Route>
+            <Route path='/contato' element={<Contato/>}></Route>
+            <Route path='/sobre-nos' element={<SobreNos/>}></Route>
+            <Route path='/criar-conta' element={<CriarConta/>}></Route>
+            <Route path='/meus-cursos' element={<MeusCursos/>}></Route>
+            <Route path="/banco-de-dados" element={<Banco />}></Route>
+            <Route path="/design" element={<Design />}></Route>
+            <Route path="/poo" element={<Poo />}></Route>
+            <Route path="/redes" element={<Rede />}></Route>
+            <Route path="/robotica" element={<Robot />}></Route>
+            <Route path="/programacao-web" element={<Web />}></Route>
           </Routes>
-        
-        <Footer></Footer>
-   </div>
-   </BrowserRouter>
-  )
-};
-export default App;
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </AuthProvider>
+  );
+}
 
+export default App;

@@ -1,38 +1,62 @@
-import React from "react";
-import styles from './CriarConta.module.css';
-import './CriarConta.module.css';
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import AuthContext from './AuthContext'// Certifique-se de que o caminho está correto
+import styles from "./CriarConta.module.css";
 
+function CriarConta() {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [confSenha, setConfSenha] = useState("");
+  const { register } = useContext(AuthContext); // Aqui não pode estar undefined
+  const navigate = useNavigate();
 
-function CriarConta(){
-    return(
-<div class="conta">
-    <h1>Crie aqui sua conta</h1>
-    <section className={styles.secaoForm}>
-                <div className={styles.formInscricao}>
-                    <h2 className={styles.tituloForm}>Formulário de inscrição</h2>
-                    <form>
-                        <p className={styles.paragrafoForm}><b>Email</b></p>
-                        <input type="email" name="email" id="email" className={styles.inputsForm} placeholder="seuemail@gmail.com" />
-                        <br />
-                        <span id="erroemail"></span>
-                        <p className={styles.paragrafoForm}><b>Senha</b></p>
-                        <input type="password" name="senha" id="senha" className={styles.inputsForm} placeholder="Sua senha" />
-                        <br />
-                        <span id="errosenha"></span>
-                        <p className={styles.paragrafoForm}><b>Modalidade</b></p>
-                        <select id="modalidade" className={styles.inputsForm}>
-                            <option value="Presencial">Presencial</option>
-                            <option value="EAD">Ensino a distancia</option>
-                        </select>
-                        <br />
-                        <button type="submit" className={styles.botaoForm}>ENVIAR</button>
-                    </form>
-                </div>
-            </section>
-     
-</div>
-    
-)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (senha !== confSenha) {
+      alert("As senhas não coincidem!");
+      return;
+    }
+    try {
+      await register(nome, email, senha);
+      navigate("/meuscursos");
+    } catch (error) {
+      alert("Erro ao criar conta. Tente novamente.");
+    }
+  };
+
+  return (
+    <div className="conta">
+      <h1 className={styles.tituloConta}>Crie aqui sua conta</h1>
+      <section className={styles.secaoForm}>
+        <div className={styles.formInscricao}>
+          <div className={styles.Formtitulo}>
+            <h2 className={styles.tituloForm}>Crie sua conta!</h2>
+            <form onSubmit={handleSubmit}>
+              <div className={styles.divForm}>
+                <p className={styles.paragrafoForm}><b>Nome:</b></p>
+                <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} className={styles.inputsForm} placeholder="Seu nome" required />
+              </div>
+              <div className={styles.divForm}>
+                <p className={styles.paragrafoForm}><b>Email:</b></p>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className={styles.inputsForm} placeholder="seuemail@gmail.com" required />
+              </div>
+              <div className={styles.divForm}>
+                <p className={styles.paragrafoForm}><b>Senha:</b></p>
+                <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} className={styles.inputsForm} placeholder="Sua senha" required />
+              </div>
+              <div className={styles.divForm}>
+                <p className={styles.paragrafoForm}><b>Confirme sua senha:</b></p>
+                <input type="password" value={confSenha} onChange={(e) => setConfSenha(e.target.value)} className={styles.inputsForm} placeholder="Confirme sua senha" required />
+              </div>
+              <br />
+              <button type="submit" className={styles.botaoForm}>ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
 export default CriarConta;
