@@ -13,11 +13,11 @@ import Robot from './components/robot';
 import Web from './components/web';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/footer';
-import { AuthProvider } from "./components/AuthContext"; // Caminho correto
+
 
 function App() {
   return (
-    <AuthProvider> {/* Contexto deve envolver tudo */}
+
       <BrowserRouter>
         <div className='App'>
           <Header/>
@@ -37,7 +37,7 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-    </AuthProvider>
+    
   );
 }
 

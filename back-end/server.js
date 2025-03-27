@@ -1,28 +1,15 @@
-const express = require("express");
-const cors = require("cors");
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
-const { PrismaClient } = require("@prisma/client");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import authRoutes from './rotas/authroutes.js';
+
+dotenv.config();
 
 const app = express();
-const prisma = new PrismaClient();
 
 app.use(cors());
 app.use(express.json());
+app.use("/api/auth", authRoutes);
 
-// Rota para listar cursos
-app.get("/cursos", async (req, res) => {
-  const cursos = await prisma.curso.findMany();
-  res.json(cursos);
-});
-
-// Rota para criar curso
-app.post("/cursos", async (req, res) => {
-  const { nome, descricao } = req.body;
-  const novoCurso = await prisma.curso.create({
-    data: { nome, descricao },
-  });
-  res.json(novoCurso);
-});
-
-// Iniciar servidor
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
