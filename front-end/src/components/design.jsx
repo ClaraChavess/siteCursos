@@ -3,6 +3,7 @@ import './design.module.css';
 import styles from './design.module.css';
 
 
+
 import detalhe1 from './imagens/detalhe1.png';
 import designer from './imagens/Designer(2).png';
 import figma from './imagens/FIGMA.png';
