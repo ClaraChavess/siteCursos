@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import AuthContext from './AuthContext'// Certifique-se de que o caminho está correto
+import AuthContext from './AuthContext'
 import styles from "./CriarConta.module.css";
 
 function CriarConta() {
