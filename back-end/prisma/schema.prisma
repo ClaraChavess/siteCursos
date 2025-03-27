@@ -1,14 +1,43 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+// schema.prisma
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "postgresql" // Ou o banco de dados de sua escolha
+  url      = env("DATABASE_URL") // Variável de ambiente com a URL do banco de dados
+}
+
+// Tabela de usuários (criar_conta)
+model CriarConta {
+  id_usuario   Int     @id @default(autoincrement())
+  nome_usuario String  @db.VarChar(50)
+  email_usuario String @db.VarChar(150) @unique
+  senha_usuario String @db.VarChar(220)
+
+  // Relação com cursos
+  cursos UsuarioCursos[]
+}
+
+// Tabela de cursos
+model Cursos {
+  id_cursos   Int     @id @default(autoincrement())
+  nome_cursos String  @db.VarChar(100)
+
+  // Relação com usuários
+  usuarios UsuarioCursos[]
+}
+
+// Tabela intermediária para a relação muitos-para-muitos entre CriarConta e Cursos
+model UsuarioCursos {
+  id_usuario Int
+  id_cursos  Int
+
+  // Definindo as chaves estrangeiras
+  usuario CriarConta @relation(fields: [id_usuario], references: [id_usuario], onDelete: Cascade)
+  curso   Cursos     @relation(fields: [id_cursos], references: [id_cursos], onDelete: Cascade)
+
+  // Chave primária composta
+  @@id([id_usuario, id_cursos])
 }
