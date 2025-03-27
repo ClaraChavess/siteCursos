@@ -1,0 +1,96 @@
+.botaoSair{
+    margin-top: -4vh;
+    width: 20%;
+    color: #ffff;
+    font-weight: 900;
+    font-family: Poppins;
+    border: none;
+    background-color:#083DA6;
+    height: 6vh;
+    margin-bottom:8vh ;
+    border-radius: 20px;
+    margin-left: 40%;
+
+}
+
+.tituloCurso{
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.nomeUser{
+    margin-left: 5%;
+    font-size: 5vh;
+}
+
+.mensagemNenhumCurso{
+    color: rgba(0, 0, 0, 0.825);
+    font-size: 3vh;
+    text-align: center;
+}
+
+.container{
+height: 500px;}
+
+.botaoHome{
+    margin-top: 4vh;
+    width: 20%;
+    color: #ffff;
+    font-weight: 900;
+    font-family: Poppins;
+    border: none;
+    background-color:#083DA6;
+    height: 6vh;
+    margin-bottom:8vh ;
+    border-radius: 20px;   
+    margin-left: 40%;
+}
+
+.botaoHome:hover{
+    cursor: pointer;
+    transition: 3ms;
+
+}
+
+.tabelaCursos{
+
+
+    margin-left: 5%;
+
+}
+
+
+    
+ table, th, td {
+border: 1px solid #083DA6;
+}
+    
+    table {
+    border-collapse: collapse;
+    margin: auto;
+    }
+    
+    th, td{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    }
+    
+    th{
+    font-weight: bold;
+    color: #083DA6;
+    }
+    
+    
+.botaoRemover{
+    color: #ffff;
+    font-weight: 900;
+    font-family: Poppins;
+    border: none;
+    background-color:#083DA6;
+    height: 5vh;
+    border-radius: 10px;
+
+
+}

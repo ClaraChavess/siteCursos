@@ -1,6 +1,7 @@
 import React from "react";
 import './poo.module.css';
 import styles from './poo.module.css';
+import InscreverBotao from "./InscreverBotao";
 
 
 //Imagens:
@@ -10,6 +11,7 @@ import Codigo from './imagens/codigo.png';
 
 
 function poo() {
+    const curso = { id: 4, nome: "Programação Orientada a Objetos" };
     return (
         <div>
             
@@ -60,7 +62,7 @@ function poo() {
                         <hr />
                     </div>
                 </section>
-                
+                <InscreverBotao curso={curso} />
 
         </div>
     );

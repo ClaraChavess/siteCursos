@@ -1,0 +1,18 @@
+.botaoInscricao{
+    margin-top: 8vh;
+    width: 20%;
+    color: #ffff;
+    font-weight: 900;
+    font-family: Poppins;
+    border: none;
+    background-color:#083DA6;
+    height: 6vh;
+    margin-bottom:8vh ;
+    border-radius: 20px;
+    margin-left: 40%;
+
+}
+
+.botaoInscricao:hover{
+    cursor: pointer;
+}

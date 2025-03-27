@@ -1,6 +1,7 @@
 import React from "react"
 import './banco.module.css';
 import styles from './banco.module.css';
+import InscreverBotao from "./InscreverBotao";
 
 
 import bd from './imagens/banco_1.png';
@@ -9,6 +10,7 @@ import BD3 from './imagens/banco_3.png';
 
 
 function banco(){
+   const curso = { id: 6, nome: "Banco de Dados" };
     return(
         <div>
             <main className={styles.mainBanco}>
@@ -54,7 +56,7 @@ function banco(){
                </aside>
             </section>
 
-            
+            <InscreverBotao curso={curso} />
         </div>
 
     );

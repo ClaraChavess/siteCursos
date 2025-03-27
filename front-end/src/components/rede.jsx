@@ -1,6 +1,7 @@
 import React from "react";
 import './rede.module.css';
 import styles from './rede.module.css';
+import InscreverBotao from "./InscreverBotao";
 
 
 //Imagens:
@@ -9,6 +10,7 @@ import Redes2 from './imagens/redes_2.png';
 import Redes3 from './imagens/rede_3.png';
 
 function rede() {
+    const curso = { id: 3, nome: "Redes de computadores" };
     return (
         <div>
             <main>
@@ -48,7 +50,7 @@ function rede() {
                     <img src={Redes3} alt="Manutenção de Redes" className={styles.manuRedes} />
                 </aside>
             </section>
-
+            <InscreverBotao curso={curso} />
         </div>
     );
 }

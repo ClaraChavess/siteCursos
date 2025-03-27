@@ -1,7 +1,7 @@
 import React from "react";
 import './web.module.css';
 import styles from './web.module.css';
-
+import InscreverBotao from "./InscreverBotao";
 
 
 import Web from './imagens/programaweb.png';
@@ -10,6 +10,7 @@ import JS from './imagens/html_cod1.png';
 
 
 function web() {
+    const curso = { id: 1, nome: "Programação Web" };
     return (
         <div>
             <main className={styles.mainWeb}>
@@ -58,7 +59,7 @@ function web() {
                     <hr className={styles.linhaWeb} />
                 </div>
             </section>
-           
+            <InscreverBotao curso={curso} />
         </div>
     );
 }

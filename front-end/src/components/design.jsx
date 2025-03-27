@@ -1,6 +1,7 @@
 import React from "react";
 import './design.module.css';
 import styles from './design.module.css';
+import InscreverBotao from "./InscreverBotao";
 
 
 
@@ -11,6 +12,7 @@ import detalhe2 from './imagens/detalhe2.png';
 import detalhe3 from './imagens/detalhe3.png';
 
 function design(){
+    const curso = { id: 2, nome: "Design" };
     return(
         <div class="design">
             <div className={styles.detalhe1}>
@@ -64,7 +66,7 @@ function design(){
                             <iframe width="95%" height="95%" src="https://www.youtube.com/embed/uan_tk6j_rg?si=yubzokcI7LL-hneL" title="YouTube video" allowFullScreen></iframe>
                         </div>
                     </div>
-
+                    <InscreverBotao curso={curso} />
 
         </div>
     )

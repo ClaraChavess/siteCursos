@@ -1,6 +1,7 @@
 import React from "react";
 import './robot.module.css';
 import styles from './robot.module.css';
+import InscreverBotao from "./InscreverBotao";
 
 // Imagens:
 import Codigo2 from './imagens/codigo2.png';
@@ -10,6 +11,7 @@ import Robozin from './imagens/robozin.png';
 
 
 function robot() {
+    const curso = { id: 5, nome: "Robótica" };
     return (
         <div>
             <main>
@@ -53,7 +55,7 @@ function robot() {
                     <img src={Robozin} alt="Robô" id={styles.imagem_pequena} />
                 </div>
             </section>
-
+            <InscreverBotao curso={curso} />
         </div>
     );
 }
